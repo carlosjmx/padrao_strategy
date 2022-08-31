@@ -1,0 +1,17 @@
+{
+    "name": "carlinhos/padrao_strategy",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos xavier",
+            "email": "carlinhosjmx@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\" : "App"
+        }
+    },
+    "require": {}
+}
