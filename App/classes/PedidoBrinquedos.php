@@ -15,15 +15,5 @@ class PedidoBrinquedos extends Pedido {
 
         return $this->nomeSetor;
     }
-
-    public function  calcularFreteComum(): float
-    {
-        return $this->valor * 0.05;
-    }
-
-    public function calcularFreteExpresso(): float
-    {
-        return $this->valor * 0.1;
-    }
  
 }

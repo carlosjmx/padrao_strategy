@@ -17,15 +17,5 @@ class PedidoEletronicos extends Pedido {
 
         return $this->nomeSetor;
     }
-
-    public function  calcularFreteComum(): float
-    {
-        return $this->valor * 0.1;
-    }
-
-    public function calcularFreteExpresso(): float
-    {      
-        throw new \Exception('Indisponível');
-    }
  
 }

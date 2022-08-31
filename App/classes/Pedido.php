@@ -5,6 +5,7 @@ namespace App\classes;
 abstract class Pedido {
     
     protected float $valor;
+    protected Frete $tipoFrete;
 
     public function getValor(){
         return $this->valor;
@@ -14,8 +15,12 @@ abstract class Pedido {
        $this->valor = $valor;
     }
 
-    abstract public function calcularFreteComum(): float;
-     
-    abstract public function calcularFreteExpresso();
+    public function setTipoFrete(Frete $frete){
+        $this->tipoFrete = $frete;
+    }
+
+    public function calculaFrete(){
+        return $this->tipoFrete->calcula($this->valor);
+    }
     
 }
