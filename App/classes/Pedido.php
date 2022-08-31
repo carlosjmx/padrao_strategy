@@ -2,9 +2,9 @@
 
 namespace App\classes;
 
-class Pedido {
+abstract class Pedido {
     
-    private float $valor;
+    protected float $valor;
 
     public function getValor(){
         return $this->valor;
