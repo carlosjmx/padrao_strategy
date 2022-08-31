@@ -14,12 +14,8 @@ abstract class Pedido {
        $this->valor = $valor;
     }
 
-    public function calcularFreteComum(){
-        return $this->valor * 0.05;
-    }
-
-    public function calcularFreteExpresso(){
-        return $this->valor * 0.1;
-    }
-  
+    abstract public function calcularFreteComum(): float;
+     
+    abstract public function calcularFreteExpresso();
+    
 }
